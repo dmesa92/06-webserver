@@ -1,8 +1,9 @@
 const express = require('express');
 const hbs = require('hbs');
 require("./hbs/helpers")
-const app = express(),
-    port = 3000;
+const app = express();
+
+const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + "/public"));
 
